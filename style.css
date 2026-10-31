@@ -450,7 +450,7 @@ nav {
 /*=========== ↓ Modal ↓ ===========*/
 
 .modal {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -4372,7 +4372,7 @@ footer {
 /* #endregion */
 
 
-/*=========== ↓ Mobile Optimization ↓ ===========*/
+/*=========== ↓ Mobile Device Optimization ↓ ===========*/
 
 /* Small phones, large smart phones, tablets */
 
@@ -4385,14 +4385,16 @@ footer {
     }
     .header__content {
         height: 580px;
-        margin-top: 100px;  
+        margin-top: 4px;  
     }
     .modal {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         transform: none;
         height: auto;
+        max-height: 100dvh;
+        overflow-y: auto;
         width: 100%;
         flex-direction: column-reverse;
         border-radius: 0;
@@ -4420,8 +4422,8 @@ footer {
         padding: 0;
     }
     .header__content {
-        height: 600px;
-        margin-top: 32px;
+        height: 650px;
+        margin-top: -96px;
     }
     .header__para {
         font-size: 18px;
@@ -4566,8 +4568,8 @@ footer {
 
     /* 6. Comfortable side padding for content */
     .header__content {
-        margin-top: -272px;
         height: 654px;
+        margin-top: -373px;
         padding-left: 16px !important;
         padding-right: 16px !important;
     }
